@@ -46,7 +46,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Zufallszahlengeneratort</h1>
+          <h1 className="App-title">Zufallszahlengenerator</h1>
         </header>
 
         <Form inline>
