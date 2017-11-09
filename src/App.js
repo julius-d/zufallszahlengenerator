@@ -1,17 +1,24 @@
-import React, {Component} from 'react';
-import './App.css';
-import {Button, Col, ControlLabel, FormControl, FormGroup, Grid, Row} from "react-bootstrap";
+import React, { Component } from "react";
+import "./App.css";
+import {
+  Button,
+  Col,
+  ControlLabel,
+  FormControl,
+  FormGroup,
+  Grid,
+  Row
+} from "react-bootstrap";
 import ResultList from "./resultList/ResultList";
 
 class App extends Component {
-
   constructor() {
     super();
     this.state = {
       randomNumbers: [],
       minValue: 1,
       maxValue: 32
-    }
+    };
   }
 
   static getRandomInt(min, max) {
@@ -22,7 +29,10 @@ class App extends Component {
   }
 
   generateRandomNumbers() {
-    const newRandom = App.getRandomInt(this.state.minValue, this.state.maxValue);
+    const newRandom = App.getRandomInt(
+      this.state.minValue,
+      this.state.maxValue
+    );
     this.setState({
       randomNumbers: [newRandom, ...this.state.randomNumbers]
     });
@@ -33,7 +43,7 @@ class App extends Component {
     let value = target.value;
     value = parseInt(value, 10);
     if (isNaN(value) || value < 0) {
-      value = '';
+      value = "";
     }
 
     const name = target.name;
@@ -54,28 +64,39 @@ class App extends Component {
           <Row>
             <Col xs={6}>
               <FormGroup controlId="min" bsSize="large">
-                <ControlLabel>Min</ControlLabel>
-                {' '}
-                <FormControl name="minValue" type="number" value={this.state.minValue}
-                             onChange={this.handleInputChange.bind(this)}/>
+                <ControlLabel>Min</ControlLabel>{" "}
+                <FormControl
+                  name="minValue"
+                  type="number"
+                  value={this.state.minValue}
+                  onChange={this.handleInputChange.bind(this)}
+                />
               </FormGroup>
             </Col>
             <Col xs={6}>
               <FormGroup controlId="max" bsSize="large">
-                <ControlLabel>Max</ControlLabel>
-                {' '}
-                <FormControl name="maxValue" type="number" value={this.state.maxValue}
-                             onChange={this.handleInputChange.bind(this)}/>
+                <ControlLabel>Max</ControlLabel>{" "}
+                <FormControl
+                  name="maxValue"
+                  type="number"
+                  value={this.state.maxValue}
+                  onChange={this.handleInputChange.bind(this)}
+                />
               </FormGroup>
             </Col>
             <Col xs={12}>
-              <Button onClick={this.generateRandomNumbers.bind(this)} bsStyle="primary" bsSize="large"
-                      block>Würfeln</Button>
+              <Button
+                onClick={this.generateRandomNumbers.bind(this)}
+                bsStyle="primary"
+                bsSize="large"
+                block
+              >
+                Würfeln
+              </Button>
             </Col>
           </Row>
         </Grid>
-        <ResultList randomNumbers={this.state.randomNumbers}/>
-
+        <ResultList randomNumbers={this.state.randomNumbers} />
       </div>
     );
   }
