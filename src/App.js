@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import {Button, Col, ControlLabel, Form, FormControl, FormGroup, Grid, Row} from "react-bootstrap";
+import {Button, Col, ControlLabel, FormControl, FormGroup, Grid, Row} from "react-bootstrap";
 
 class App extends Component {
 
@@ -49,34 +49,30 @@ class App extends Component {
           <h1 className="App-title">Zufallszahlengenerator</h1>
         </header>
 
-        <Form>
+        <Grid>
           <Row>
-            <Grid>
-              <Row>
-                <Col xs={6}>
-                  <FormGroup controlId="min" bsSize="large">
-                    <ControlLabel>Min</ControlLabel>
-                    {' '}
-                    <FormControl name="minValue" type="number" value={this.state.minValue}
-                                 onChange={this.handleInputChange.bind(this)}/>
-                  </FormGroup>
-                </Col>
-                <Col xs={6}>
-                  <FormGroup controlId="max" bsSize="large">
-                    <ControlLabel>Max</ControlLabel>
-                    {' '}
-                    <FormControl name="maxValue" type="number" value={this.state.maxValue}
-                                 onChange={this.handleInputChange.bind(this)}/>
-                  </FormGroup>
-                </Col>
-              </Row>
-            </Grid>
+            <Col xs={6}>
+              <FormGroup controlId="min" bsSize="large">
+                <ControlLabel>Min</ControlLabel>
+                {' '}
+                <FormControl name="minValue" type="number" value={this.state.minValue}
+                             onChange={this.handleInputChange.bind(this)}/>
+              </FormGroup>
+            </Col>
+            <Col xs={6}>
+              <FormGroup controlId="max" bsSize="large">
+                <ControlLabel>Max</ControlLabel>
+                {' '}
+                <FormControl name="maxValue" type="number" value={this.state.maxValue}
+                             onChange={this.handleInputChange.bind(this)}/>
+              </FormGroup>
+            </Col>
+            <Col xs={12}>
+              <Button onClick={this.generateRandomNumbers.bind(this)} bsStyle="primary" bsSize="large"
+                      block>Würfeln</Button>
+            </Col>
           </Row>
-          <Row>
-            <Button onClick={this.generateRandomNumbers.bind(this)} bsStyle="primary" bsSize="large"
-                    block>Würfeln</Button>
-          </Row>
-        </Form>
+        </Grid>
         <div className="Results">
           {this.state.randomNumbers.map((randomNumber, i) => <div key={i}><strong>{randomNumber}</strong></div>)}
         </div>
