@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import "./ResultList.css";
-
+import PropTypes from 'prop-types';
 
 export default class ResultList extends Component {
 
@@ -17,3 +17,8 @@ export default class ResultList extends Component {
   }
 
 }
+
+ResultList.propTypes = {
+  randomNumbers: PropTypes.arrayOf(PropTypes.number).isRequired
+};
+
