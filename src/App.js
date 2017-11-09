@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import {Button, Col, ControlLabel, FormControl, FormGroup, Grid, Row} from "react-bootstrap";
+import ResultList from "./resultList/ResultList";
 
 class App extends Component {
 
@@ -73,10 +74,7 @@ class App extends Component {
             </Col>
           </Row>
         </Grid>
-        <div className="Results">
-          {this.state.randomNumbers.map((randomNumber, i) => <div key={i}><strong>{randomNumber}</strong></div>)}
-        </div>
-
+        <ResultList randomNumbers={this.state.randomNumbers}/>
 
       </div>
     );
