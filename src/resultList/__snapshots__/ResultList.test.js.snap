@@ -5,12 +5,16 @@ exports[`ResultList renders correctly 1`] = `
   className="Results"
 >
   <div>
-    <strong>
+    <strong
+      className="newest-result"
+    >
       1337
     </strong>
   </div>
   <div>
-    <strong>
+    <strong
+      className=""
+    >
       42
     </strong>
   </div>
