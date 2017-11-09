@@ -10,7 +10,6 @@ export default class ResultList extends Component {
         {this.props.randomNumbers.map((randomNumber, i) => <div key={numberOfResults-i}> <strong>{randomNumber}</strong></div>)}
       </div>
     );
-
-
   }
+
 }
