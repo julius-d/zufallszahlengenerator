@@ -4,13 +4,17 @@ import renderer from "react-test-renderer";
 import { mount } from "enzyme";
 
 describe("App", () => {
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = mount(<App />);
+  });
+
   it("renders correctly", () => {
-    const tree = renderer.create(<App />).toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 
   it("creates random numbers", () => {
-    const wrapper = mount(<App />);
     expect(wrapper.find("ResultList").props().randomNumbers.length).toEqual(0);
     wrapper.find("button").simulate("click");
     expect(wrapper.find("ResultList").props().randomNumbers.length).toEqual(1);
@@ -19,7 +23,6 @@ describe("App", () => {
   });
 
   it("max value can be changed", () => {
-    const wrapper = mount(<App />);
     expect(wrapper.state().maxValue).toEqual(32);
     wrapper
       .find("input#max")
@@ -28,7 +31,6 @@ describe("App", () => {
   });
 
   it("min value can be changed", () => {
-    const wrapper = mount(<App />);
     expect(wrapper.state().minValue).toEqual(1);
     wrapper
       .find("input#min")
@@ -36,25 +38,23 @@ describe("App", () => {
     expect(wrapper.state().minValue).toEqual(2);
   });
 
-  function enableLotoMode(wrapper) {
+  function enableLottoMode() {
     wrapper
       .find("input#lotto")
       .simulate("change", { target: { checked: true } });
   }
 
   it("changes button name", () => {
-    const wrapper = mount(<App />);
     expect(wrapper.state().lotto).toEqual(false);
     expect(wrapper.find("button").text()).toEqual("Würfeln");
-    enableLotoMode(wrapper);
+    enableLottoMode();
     expect(wrapper.state().lotto).toEqual(true);
 
     expect(wrapper.find("button").text()).toEqual("Zahl ziehen");
   });
 
   it("creates all possible loto numbers", () => {
-    const wrapper = mount(<App />);
-    enableLotoMode(wrapper);
+    enableLottoMode();
     wrapper
       .find("input#max")
       .simulate("change", { target: { value: "10", name: "maxValue" } });
@@ -78,8 +78,7 @@ describe("App", () => {
   });
 
   it("does not fail on choosing one number more than possible", () => {
-    const wrapper = mount(<App />);
-    enableLotoMode(wrapper);
+    enableLottoMode();
     wrapper
       .find("input#max")
       .simulate("change", { target: { value: "2", name: "maxValue" } });

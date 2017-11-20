@@ -4,14 +4,18 @@ exports[`ResultList renders correctly 1`] = `
 <div
   className="Results"
 >
-  <div>
+  <div
+    key="2"
+  >
     <strong
       className="newest-result"
     >
       1337
     </strong>
   </div>
-  <div>
+  <div
+    key="1"
+  >
     <strong
       className=""
     >

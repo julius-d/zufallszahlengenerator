@@ -80,7 +80,6 @@ exports[`App renders correctly 1`] = `
            
           <div
             className="checkbox"
-            style={undefined}
           >
             <label
               title=""
