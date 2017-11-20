@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import {
   Button,
+  Checkbox,
   Col,
   ControlLabel,
   FormControl,
@@ -17,7 +18,8 @@ class App extends Component {
     this.state = {
       randomNumbers: [],
       minValue: 1,
-      maxValue: 32
+      maxValue: 32,
+      lotto: false
     };
   }
 
@@ -29,9 +31,15 @@ class App extends Component {
   }
 
   generateRandomNumbers() {
-    const newRandom = App.getRandomInt(
-      this.state.minValue,
-      this.state.maxValue
+    let newRandom;
+    let tryCount = 0;
+    do {
+      tryCount++;
+      newRandom = App.getRandomInt(this.state.minValue, this.state.maxValue);
+    } while (
+      this.state.lotto &&
+      tryCount < 10000 &&
+      this.state.randomNumbers.indexOf(newRandom) >= 0
     );
     this.setState({
       randomNumbers: [newRandom, ...this.state.randomNumbers]
@@ -53,6 +61,15 @@ class App extends Component {
     });
   }
 
+  onChangeLotto(event) {
+    const target = event.target;
+    const value = target.checked;
+
+    this.setState({
+      lotto: value
+    });
+  }
+
   render() {
     return (
       <div className="App">
@@ -62,7 +79,7 @@ class App extends Component {
 
         <Grid>
           <Row>
-            <Col xs={6}>
+            <Col xs={4}>
               <FormGroup controlId="min" bsSize="large">
                 <ControlLabel>Min</ControlLabel>{" "}
                 <FormControl
@@ -73,7 +90,7 @@ class App extends Component {
                 />
               </FormGroup>
             </Col>
-            <Col xs={6}>
+            <Col xs={4}>
               <FormGroup controlId="max" bsSize="large">
                 <ControlLabel>Max</ControlLabel>{" "}
                 <FormControl
@@ -84,6 +101,16 @@ class App extends Component {
                 />
               </FormGroup>
             </Col>
+            <Col xs={4}>
+              <FormGroup controlId="lotto" bsSize="large">
+                <ControlLabel>Jede Zahl nur einmal</ControlLabel>{" "}
+                <Checkbox
+                  id="lotto"
+                  value={this.state.lotto}
+                  onChange={this.onChangeLotto.bind(this)}
+                />
+              </FormGroup>
+            </Col>
             <Col xs={12}>
               <Button
                 onClick={this.generateRandomNumbers.bind(this)}
@@ -91,7 +118,7 @@ class App extends Component {
                 bsSize="large"
                 block
               >
-                Würfeln
+                {this.state.lotto ? "Zahl ziehen" : "Würfeln"}
               </Button>
             </Col>
           </Row>
