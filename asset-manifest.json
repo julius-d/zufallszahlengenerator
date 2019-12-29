@@ -1,11 +1,26 @@
 {
-  "main.css": "static/css/main.b5702278.css",
-  "main.css.map": "static/css/main.b5702278.css.map",
-  "main.js": "static/js/main.105635cf.js",
-  "main.js.map": "static/js/main.105635cf.js.map",
-  "static/media/glyphicons-halflings-regular.eot": "static/media/glyphicons-halflings-regular.f4769f9b.eot",
-  "static/media/glyphicons-halflings-regular.svg": "static/media/glyphicons-halflings-regular.89889688.svg",
-  "static/media/glyphicons-halflings-regular.ttf": "static/media/glyphicons-halflings-regular.e18bbf61.ttf",
-  "static/media/glyphicons-halflings-regular.woff": "static/media/glyphicons-halflings-regular.fa277232.woff",
-  "static/media/glyphicons-halflings-regular.woff2": "static/media/glyphicons-halflings-regular.448c34a5.woff2"
+  "files": {
+    "main.css": "/zufallszahlengenerator/static/css/main.9b196ddc.chunk.css",
+    "main.js": "/zufallszahlengenerator/static/js/main.957ec8d4.chunk.js",
+    "main.js.map": "/zufallszahlengenerator/static/js/main.957ec8d4.chunk.js.map",
+    "runtime-main.js": "/zufallszahlengenerator/static/js/runtime-main.3d46967e.js",
+    "runtime-main.js.map": "/zufallszahlengenerator/static/js/runtime-main.3d46967e.js.map",
+    "static/css/2.2872a23b.chunk.css": "/zufallszahlengenerator/static/css/2.2872a23b.chunk.css",
+    "static/js/2.7f239837.chunk.js": "/zufallszahlengenerator/static/js/2.7f239837.chunk.js",
+    "static/js/2.7f239837.chunk.js.map": "/zufallszahlengenerator/static/js/2.7f239837.chunk.js.map",
+    "index.html": "/zufallszahlengenerator/index.html",
+    "precache-manifest.d35c98a8b05ba00e6d53ac8bc35cdb29.js": "/zufallszahlengenerator/precache-manifest.d35c98a8b05ba00e6d53ac8bc35cdb29.js",
+    "service-worker.js": "/zufallszahlengenerator/service-worker.js",
+    "static/css/2.2872a23b.chunk.css.map": "/zufallszahlengenerator/static/css/2.2872a23b.chunk.css.map",
+    "static/css/main.9b196ddc.chunk.css.map": "/zufallszahlengenerator/static/css/main.9b196ddc.chunk.css.map",
+    "static/js/2.7f239837.chunk.js.LICENSE": "/zufallszahlengenerator/static/js/2.7f239837.chunk.js.LICENSE",
+    "static/media/bootstrap.css": "/zufallszahlengenerator/static/media/glyphicons-halflings-regular.fa277232.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3d46967e.js",
+    "static/css/2.2872a23b.chunk.css",
+    "static/js/2.7f239837.chunk.js",
+    "static/css/main.9b196ddc.chunk.css",
+    "static/js/main.957ec8d4.chunk.js"
+  ]
 }
