@@ -12,6 +12,8 @@ import {
 } from "react-bootstrap";
 import ResultList from "./resultList/ResultList";
 
+const MAX_ALLOWED_VALUE = 1000000000;
+
 class App extends Component {
   constructor() {
     super();
@@ -52,6 +54,8 @@ class App extends Component {
     value = parseInt(value, 10);
     if (isNaN(value) || value < 0) {
       value = "";
+    } else if (value > MAX_ALLOWED_VALUE) {
+      value = MAX_ALLOWED_VALUE;
     }
 
     const name = target.name;

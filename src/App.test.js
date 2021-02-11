@@ -33,6 +33,18 @@ describe("App", () => {
     expect(wrapper.state().minValue).toEqual(2);
   });
 
+  it("max value is limited to 1000000000", () => {
+    expect(wrapper.state().maxValue).toEqual(32);
+    changeMaxValueTo("90000000009");
+    expect(wrapper.state().maxValue).toEqual(1000000000);
+  });
+
+  it("max value cannot be chars", () => {
+    expect(wrapper.state().maxValue).toEqual(32);
+    changeMaxValueTo("foo");
+    expect(wrapper.state().maxValue).toEqual("");
+  });
+
   function enableLottoMode() {
     wrapper
       .find("input#lotto")
