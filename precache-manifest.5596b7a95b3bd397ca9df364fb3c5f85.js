@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "302546b18916a161284abbf2336e9f26",
+    "revision": "228439aa3a0dbd405a4786e211da1495",
     "url": "/zufallszahlengenerator/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/zufallszahlengenerator/static/css/2.2872a23b.chunk.css"
   },
   {
-    "revision": "b4790cba3296affc63be",
+    "revision": "cd73e9aea958aae4085f",
     "url": "/zufallszahlengenerator/static/css/main.9b196ddc.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/zufallszahlengenerator/static/js/2.7f239837.chunk.js.LICENSE"
   },
   {
-    "revision": "b4790cba3296affc63be",
-    "url": "/zufallszahlengenerator/static/js/main.957ec8d4.chunk.js"
+    "revision": "cd73e9aea958aae4085f",
+    "url": "/zufallszahlengenerator/static/js/main.21c2a308.chunk.js"
   },
   {
     "revision": "ee41844a5b5ea7d3c3f9",

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/zufallszahlengenerator/precache-manifest.d35c98a8b05ba00e6d53ac8bc35cdb29.js"
+  "/zufallszahlengenerator/precache-manifest.5596b7a95b3bd397ca9df364fb3c5f85.js"
 );
 
 self.addEventListener('message', (event) => {
