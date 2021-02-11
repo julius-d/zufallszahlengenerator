@@ -1,26 +1,24 @@
 {
   "files": {
-    "main.css": "/zufallszahlengenerator/static/css/main.9b196ddc.chunk.css",
-    "main.js": "/zufallszahlengenerator/static/js/main.21c2a308.chunk.js",
-    "main.js.map": "/zufallszahlengenerator/static/js/main.21c2a308.chunk.js.map",
-    "runtime-main.js": "/zufallszahlengenerator/static/js/runtime-main.3d46967e.js",
-    "runtime-main.js.map": "/zufallszahlengenerator/static/js/runtime-main.3d46967e.js.map",
-    "static/css/2.2872a23b.chunk.css": "/zufallszahlengenerator/static/css/2.2872a23b.chunk.css",
-    "static/js/2.7f239837.chunk.js": "/zufallszahlengenerator/static/js/2.7f239837.chunk.js",
-    "static/js/2.7f239837.chunk.js.map": "/zufallszahlengenerator/static/js/2.7f239837.chunk.js.map",
+    "main.css": "/zufallszahlengenerator/static/css/main.d48098e1.chunk.css",
+    "main.js": "/zufallszahlengenerator/static/js/main.fb4c5566.chunk.js",
+    "main.js.map": "/zufallszahlengenerator/static/js/main.fb4c5566.chunk.js.map",
+    "runtime-main.js": "/zufallszahlengenerator/static/js/runtime-main.0a26f249.js",
+    "runtime-main.js.map": "/zufallszahlengenerator/static/js/runtime-main.0a26f249.js.map",
+    "static/css/2.c5cb2967.chunk.css": "/zufallszahlengenerator/static/css/2.c5cb2967.chunk.css",
+    "static/js/2.81ae254b.chunk.js": "/zufallszahlengenerator/static/js/2.81ae254b.chunk.js",
+    "static/js/2.81ae254b.chunk.js.map": "/zufallszahlengenerator/static/js/2.81ae254b.chunk.js.map",
     "index.html": "/zufallszahlengenerator/index.html",
-    "precache-manifest.5596b7a95b3bd397ca9df364fb3c5f85.js": "/zufallszahlengenerator/precache-manifest.5596b7a95b3bd397ca9df364fb3c5f85.js",
-    "service-worker.js": "/zufallszahlengenerator/service-worker.js",
-    "static/css/2.2872a23b.chunk.css.map": "/zufallszahlengenerator/static/css/2.2872a23b.chunk.css.map",
-    "static/css/main.9b196ddc.chunk.css.map": "/zufallszahlengenerator/static/css/main.9b196ddc.chunk.css.map",
-    "static/js/2.7f239837.chunk.js.LICENSE": "/zufallszahlengenerator/static/js/2.7f239837.chunk.js.LICENSE",
-    "static/media/bootstrap.css": "/zufallszahlengenerator/static/media/glyphicons-halflings-regular.fa277232.woff"
+    "static/css/2.c5cb2967.chunk.css.map": "/zufallszahlengenerator/static/css/2.c5cb2967.chunk.css.map",
+    "static/css/main.d48098e1.chunk.css.map": "/zufallszahlengenerator/static/css/main.d48098e1.chunk.css.map",
+    "static/js/2.81ae254b.chunk.js.LICENSE.txt": "/zufallszahlengenerator/static/js/2.81ae254b.chunk.js.LICENSE.txt",
+    "static/media/bootstrap.css": "/zufallszahlengenerator/static/media/glyphicons-halflings-regular.be810be3.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.3d46967e.js",
-    "static/css/2.2872a23b.chunk.css",
-    "static/js/2.7f239837.chunk.js",
-    "static/css/main.9b196ddc.chunk.css",
-    "static/js/main.21c2a308.chunk.js"
+    "static/js/runtime-main.0a26f249.js",
+    "static/css/2.c5cb2967.chunk.css",
+    "static/js/2.81ae254b.chunk.js",
+    "static/css/main.d48098e1.chunk.css",
+    "static/js/main.fb4c5566.chunk.js"
   ]
 }
