@@ -1,6 +1,6 @@
 import React from "react";
 import App from "./App";
-import {mount} from "enzyme";
+import { mount } from "enzyme";
 
 describe("App", () => {
   let wrapper;
@@ -60,7 +60,7 @@ describe("App", () => {
   function changeMinValueTo(value) {
     wrapper
       .find("input#min")
-      .simulate("change", {target: {value: value, name: "minValue"}});
+      .simulate("change", { target: { value: value, name: "minValue" } });
   }
 
   it("changes button name", () => {

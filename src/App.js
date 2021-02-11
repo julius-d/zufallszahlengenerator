@@ -8,7 +8,7 @@ import {
   FormControl,
   FormGroup,
   Grid,
-  Row
+  Row,
 } from "react-bootstrap";
 import ResultList from "./resultList/ResultList";
 
@@ -21,7 +21,7 @@ class App extends Component {
       randomNumbers: [],
       minValue: 1,
       maxValue: 32,
-      lotto: false
+      lotto: false,
     };
   }
 
@@ -44,7 +44,7 @@ class App extends Component {
       this.state.randomNumbers.indexOf(newRandom) >= 0
     );
     this.setState({
-      randomNumbers: [newRandom, ...this.state.randomNumbers]
+      randomNumbers: [newRandom, ...this.state.randomNumbers],
     });
   }
 
@@ -61,7 +61,7 @@ class App extends Component {
     const name = target.name;
 
     this.setState({
-      [name]: value
+      [name]: value,
     });
   }
 
@@ -70,7 +70,7 @@ class App extends Component {
     const value = target.checked;
 
     this.setState({
-      lotto: value
+      lotto: value,
     });
   }
 

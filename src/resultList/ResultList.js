@@ -20,5 +20,5 @@ export default class ResultList extends Component {
 }
 
 ResultList.propTypes = {
-  randomNumbers: PropTypes.arrayOf(PropTypes.number).isRequired
+  randomNumbers: PropTypes.arrayOf(PropTypes.number).isRequired,
 };
